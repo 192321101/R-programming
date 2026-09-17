@@ -1,0 +1,4 @@
+library(reshape2)
+d <- melt(airquality)
+d
+dcast(d, variable~month, mean)
