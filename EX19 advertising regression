@@ -1,0 +1,4 @@
+d <- read.csv("advertising.csv")
+m <- lm(Sales~Spend,data=d)
+summary(m)
+predict(m,data.frame(Spend=100))
