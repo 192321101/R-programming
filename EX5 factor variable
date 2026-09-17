@@ -1,0 +1,3 @@
+f <- factor(c("High","Low","Medium","High"))
+f
+levels(f)
