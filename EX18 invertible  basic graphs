@@ -4,3 +4,12 @@ if(det(A) != 0) {
 } else {
  print("Not Invertible")
 }
+
+
+
+x <- 1:5; y <- c(2,4,3,5,6)
+boxplot(y)
+hist(y)
+barplot(y)
+plot(x,y,type="l")
+plot(x,y)
