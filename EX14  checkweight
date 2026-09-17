@@ -1,0 +1,5 @@
+d <- ChickWeight
+d[order(d$weight),]
+library(reshape2)
+melt(d)
+dcast(d,Diet~Time,mean)
