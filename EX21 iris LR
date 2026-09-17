@@ -1,0 +1,7 @@
+set.seed(1)
+i <- sample(1:nrow(iris),.8*nrow(iris))
+tr <- iris[i,]; te <- iris[-i,]
+m <- glm(Species~Petal.Length+Petal.Width,
+         data=tr,family="binomial")
+p <- predict(m,te,type="response")
+table(p,te$Species)
