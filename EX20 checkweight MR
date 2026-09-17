@@ -1,0 +1,5 @@
+d <- ChickWeight
+m <- lm(weight~Time+Diet,data=d)
+summary(m)
+p <- predict(m,d)
+mean((d$weight-p)^2)
