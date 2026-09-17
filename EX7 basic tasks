@@ -1,2 +1,7 @@
+n <- 12
+(1:n)[n%%(1:n)==0]
+
+sample(-50:50,10)
+
 for(i in 1:100)
  print(if(i%%15==0)"FizzBuzz" else if(i%%3==0)"Fizz" else if(i%%5==0)"Buzz" else i)
