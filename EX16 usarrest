@@ -1,0 +1,8 @@
+d <- USArrests
+summary(d)
+cor(d)
+d[which.max(d$Rape),]
+d[which.max(d$Murder),]
+d[which.min(d$Murder),]
+hist(d$Murder)
+plot(d$Assault,d$Murder)
