@@ -1,3 +1,8 @@
 A <- matrix(1:9, nrow=3)
 diag_elements <- diag(A)
 print(diag_elements)
+
+
+d <- Titanic
+barplot(d,beside=T)
+hist(as.numeric(Titanic[,"Age"]))
